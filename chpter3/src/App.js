@@ -1,7 +1,6 @@
 import React from 'react';
-import Logout from './user/Logout';
-import Register from './user/Register';
+import UserBar from './user/UserBar';
 
 export default function App() {
-  return <Register />
+  return <UserBar />
 }
