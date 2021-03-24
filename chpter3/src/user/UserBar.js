@@ -3,16 +3,16 @@ import Login from './Login';
 import Logout from './Logout';
 import Register from './Register';
 
-export default function UserBar({ user, setUser }) {
+export default function UserBar({ user, dispatch }) {
 
     if (user) {
-        return <Logout setUser={setUser} />
+        return <Logout user={user} dispatch={dispatch} />
 
     } else {
         return (
             <React.Fragment>
-                <Login setUser={setUser} />
-                <Register setUser={setUser} />
+                <Login disptach={dispatch} />
+                <Register dispatch={dispatch} />
             </React.Fragment>
         )
     }

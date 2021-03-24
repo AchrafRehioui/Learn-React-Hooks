@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useReducer } from 'react';
 import PostList from './post/PostList';
 import CreatePost from './post/CreatePost';
 import UserBar from './user/UserBar';
@@ -12,12 +12,12 @@ const defaultPosts = [
 
 export default function App() {
 
-  const [user, setUser] = useState('');
+  const [user, dispatchUser] = useReducer(userReducer, '');
   const [posts, setPosts] = useState(defaultPosts);
 
   return (
     <div style={{ padding: 8 }}>
-      <UserBar user={user} setUser={setUser} />
+      <UserBar user={user} dispatch={dispatchUser} />
       <br />
       {user && <CreatePost user={user} posts={posts} setPosts={setPosts} />}
       <br />
