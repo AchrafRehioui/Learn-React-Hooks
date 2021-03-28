@@ -1,0 +1,20 @@
+{
+    "posts": [
+    { "id": "react-hooks", "title": "React Hooks", "content": "amazing section", "author": "Achraf" },
+    { "id": "react-fragments", "title": "Using React Fragments",
+   "content": "DOM three", "author": "Achraf" }
+    ],
+    "users": [
+    { "id": 1, "username": "Achraf", "password": "achraf123"
+   }
+    ],
+    "themes": [
+    { "id": 1, "primaryColor": "deepskyblue", "secondaryColor":
+   "coral" },
+    { "id": 2, "primaryColor": "orchid", "secondaryColor":
+   "mediumseagreen" },
+    { "id": 3, "primaryColor": "darkslategray", "secondaryColor":
+   "slategray" }
+    ]
+   }
+   
